@@ -92,28 +92,6 @@ Generates examples showing effects of:
 - Anisotropy strength
 - Domain size
 
-## Configuration
-
-Edit `simulation_config.py` to customize parameters:
-
-```python
-class DefaultConfig:
-    domain.sizex = 75              # Grid size
-    domain.sizey = 75
-    time.num_steps = 400           # Simulation steps
-    nucleation.crystal_angle = 0   # Crystal orientation (degrees)
-    physical.undercooling = 15     # Driving force (K)
-```
-
-Material properties in `Materials_Constants.json`:
-```json
-{
-    "C0": 3,        // Initial concentration (wt%)
-    "P_C": 0.17,    // Partition coefficient
-    "ml": -3.36     // Liquidus slope (K/wt%)
-}
-```
-
 ## Documentation
 
 📚 **Detailed documentation available in the [Wiki](../../wiki)**:
@@ -121,31 +99,6 @@ Material properties in `Materials_Constants.json`:
 - [Configuration Guide](../../wiki/Configuration)
 - [Examples & Tutorials](../../wiki/Examples)
 - [Troubleshooting](../../wiki/Troubleshooting)
-
-## Project Structure
-
-```
-DendriteModel/
-├── Terminal2DCompositionModel.py   # Main simulation script
-├── simulation_engine.py             # Core simulation logic
-├── simulation_config.py             # Configuration presets
-├── Variables.py                     # Field initialization
-├── GrainBoundary.py                 # Interface detection
-├── GeometricFactor.py               # Geometric calculations
-├── NormalAngle.py                   # Normal vector calculation
-├── SoluteTransport.py               # Diffusion solver
-├── FractionSolidComposition.py      # Solidification kinetics
-└── Materials_Constants.json         # Material properties
-```
-
-## Quick Reference
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `sizex/y` | 75 | Grid dimensions |
-| `num_steps` | 400 | Simulation iterations |
-| `crystal_angle` | 0° | Crystal orientation |
-| `undercooling` | 15 K | Driving force |
 
 ## Citation
 
@@ -170,7 +123,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## Contact
 
 **Javed Akram**
-📧 jaavedakram@gmail.com
+💼 [LinkedIn](https://www.linkedin.com/in/AkramJ)
 🔗 [GitHub Issues](https://github.com/jaavedakram/DendriteModel/issues)
 
 ---
